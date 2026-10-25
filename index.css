@@ -1,0 +1,178 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	line-height: 1.5;
+}
+
+/* Nav */
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 2rem;
+	background-color: #1a1a1a;
+	color: #ffffff;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.logo {
+	height: 80px;
+	width: auto;
+}
+
+.nav-links {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav-links a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+	color: #ff6600;
+}
+
+/* Hero */
+
+.hero {
+	background-image: url("/assets/hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.hero-content {
+	background: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	padding: 2.5rem;
+	border-radius: 25px;
+	max-width: 800px;
+	text-align: center;
+	color: #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-content h2 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+	font-size: 1.1rem;
+	opacity: 0.9;
+}
+
+.catalog-section {
+	padding: 3rem 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section-header {
+	margin-bottom: 2rem;
+}
+
+/* Grid de los autos */
+
+.car-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.car-card {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+	width: 320px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+	transform: translateY(-5px);
+	cursor: pointer;
+}
+
+.card-img-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	gap: 0.75rem;
+	flex-grow: 1;
+}
+
+.badge {
+	align-self: flex-start;
+	background-color: #e2e8f0;
+	color: #4a5568;
+	padding: 0.25rem 0.75rem;
+	font-size: 0.75rem;
+	font-weight: bold;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.car-content h3 {
+	font-size: 1.25rem;
+	color: #1a1a1a;
+}
+
+/* Footer */
+
+.main-footer {
+	text-align: center;
+	padding: 2rem;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+	.main-header {
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+
+	.nav-links {
+		gap: 1rem;
+	}
+
+	.car-card {
+		width: 100%;
+	}
+}
